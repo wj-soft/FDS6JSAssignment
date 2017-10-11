@@ -5,7 +5,7 @@
 
 function alphaString46(s) {
   var i = new String(s);
-  if (i.length >= 4 && i.length <= 6 && i * 1 !== NaN) {
+  if (i.length >= 4 && i.length <= 6 && !isNaN(i * 1)) {
     return true;
   } else { return false; }
 
