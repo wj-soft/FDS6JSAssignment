@@ -9,9 +9,11 @@ function toWeirdCase(s) {
   var res = '';
   for (i = 0; i < splitWord.length; i++) {
     for (j = 0; j < splitWord[i].length; j++) {
-      if (j % 2 === 0) { res += splitWord[i].toUpperCase } else { splitWord[i].toLowerCase }
-    }
-  }
+      if (j % 2 === 0) { res += splitWord[i][j].toUpperCase(); } else { res += splitWord[i][j].toLowerCase(); };
+    };
+    res += ' ';
+  };
+  return res.trim();
 
 
 }
