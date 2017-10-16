@@ -10,13 +10,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>더하기 결과 확인</title>
-  <style>
-    .box {
-      width: 100px;
-      height: 100px;
-      background-color: red;
-    }
-  </style>
 </head>
 
 <body>
@@ -28,6 +21,13 @@
   </div>
   <input type="button" value="확인">
   <script>
+    var a = document.querySelector('input[name = a]');
+    console.log(a);
+    var b = document.querySelector('input[name = b]');
+    var result = document.querySelector('input[name = result]');
+    document.querySelector('input[type = button]').addEventListener('click', function() {
+      alert(a.value * 1 + b.value * 1 === result.value * 1);
+    })
   </script>
 </body>
 

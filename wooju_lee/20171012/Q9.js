@@ -4,7 +4,7 @@
 // 예를들어 n이 121이라면 이는 정수 11의 제곱이므로 (11+1)의 제곱인 144를 리턴하고, 3이라면 'no'을 리턴한다.
 
 function nextSqaure(n) {
-  s = Number.isInteger(Math.sqrt(n)) ? n : 'no';
+  s = Number.isInteger(Math.sqrt(n)) ? n : 'no'; // 입력값이 정수가 아닐때
   res = '';
   //   console.log(s);
   if (Number.isInteger(s)) { res += Math.pow((Math.sqrt(n) + 1), 2); } else { res += 'no'; };

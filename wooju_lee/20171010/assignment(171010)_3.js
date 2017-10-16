@@ -13,8 +13,9 @@
 
 
 
-function alphString46(s) {
-  var regexr = /^\d+${4,6}/
+function alphaString46(s) {
+  s = s ? s : '';
+  var regexr = /^\d{4,6}$/
   return regexr.test(s)
 }
 

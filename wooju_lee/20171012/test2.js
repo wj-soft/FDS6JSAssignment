@@ -4,13 +4,11 @@
 // 예를 들어 인수가[3, 6, -2, -5, 7, 3] 인 경우, 21 을 반환한다.
 
 function adjacentElementsProduct(arr) {
-  var res = [];
-  for (var i = 0; i < arr.length - 1; i++) {
-    res[i] = arr[i] * arr[i + 1];
+  ver result = [];
+  for (var i = 0; i < arr.langth - 1; i++) {
+    result[i] = result[i] * ressult[i + 1];
   }
-  // console.log(res);
-  return res.sort(function(a, b) { return b - a; })[0];
-
 }
+
 
 console.log(adjacentElementsProduct([3, 6, -2, -5, 7, 3])); // 21

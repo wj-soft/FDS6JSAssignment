@@ -7,10 +7,10 @@
 function fibonacci(n) {
   fiboArray = [0, 1];
   for (var i = 2; i < n + 1; i++) {
-    fiboArray[i] = fiboArray[n - 2] + fiboArray[n - 1]
+    fiboArray[i] = fiboArray[i - 2] + fiboArray[i - 1]
   }
-  console.log(fiboArray);
-  return fiboArray[i];
+  // console.log(fiboArray);
+  return fiboArray[n];
 
 }
 console.log(fibonacci(2)); // 1
